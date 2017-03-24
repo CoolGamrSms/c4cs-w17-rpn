@@ -11,8 +11,13 @@ OPERATORS = {
 	'%': operator.mod,
 }
 
+def easter_egg(arg):
+	return arg[::-1]
 
 def calculate(arg):
+	if arg == 'egg':
+		return easter_egg(arg)
+
 	stack = list()
 	for operand in arg.split():
 		try:
