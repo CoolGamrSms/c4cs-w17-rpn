@@ -204,7 +204,7 @@ h1 {
         if(last !== " ") $(".screen").append(" ");
       }
       else if($.isNumeric(clicked) || clicked === ".") {
-        if(last === "+" || last === "_" || last === "*" || last === "-")
+        if(last === "+" || last === "/" || last === "*" || last === "-")
           $(".screen").append(" ");
         $(".screen").append(clicked);
       }
