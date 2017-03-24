@@ -2,4 +2,7 @@ language: python
 python:
   - "3.5"
 # command to run tests
+install: pip install coveralls
 script: make test
+after_success:
+  coveralls
