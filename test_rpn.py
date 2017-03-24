@@ -21,9 +21,9 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('6 5 *')
 		self.assertEqual(30, result)
 	def test_divide(self):
-		result = rpn.calculate('30 5 /')
+		result = rpn.calculate('30 5 _')
 		self.assertEqual(6, result)
-		result = rpn.calculate('5 5 /')
+		result = rpn.calculate('5 5 _')
 		self.assertEqual(1, result)
-		result = rpn.calculate('0 9 /')
+		result = rpn.calculate('0 9 _')
 		self.assertEqual(0, result)
