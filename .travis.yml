@@ -3,6 +3,6 @@ python:
   - "3.5"
 # command to run tests
 install: pip install coveralls
-script: coverage run test_rpn.py
+script: coverage run test_rpn.py --source=rpn.py
 after_success:
   coveralls
